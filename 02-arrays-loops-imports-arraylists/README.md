@@ -104,3 +104,10 @@ public static void main(String[] args) {
 - the constructor is weird
 - still have to declare the type of elements inside
 - still only one data type
+
+## Testing
+
+- TDD = Test Driven Development. Write your tests first, then implement.
+- Tests the input and output of your function
+- To test System.out, return String, String[], or ArrayList<String> from the function and test _that_.
+- Think of all the ways you could break it, write tests for those things!
