@@ -4,7 +4,7 @@
 
 * [Java Tutorials: docs.oracle.com](https://docs.oracle.com/javase/tutorial/)
 * [Whiteboarding](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Whiteboard_Workflow.html)
-* [Pseudocode overview](../Pseudocode.md)
+* [Pseudocode overview](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Pseudocode.html)
 
 ## Agenda
 
