@@ -143,7 +143,7 @@ public static void helloWorld(){
 
 In Java, we create arrays with a fixed size, and then we can loop through them with a basic for loop.
 ```java
-String[] names = ["Alice", "Bob", "Carol"];
+String[] names = {"Alice", "Bob", "Carol"};
 for (int i = 0; i < names.length; i++) {
   System.out.println(names[i]);
 }
