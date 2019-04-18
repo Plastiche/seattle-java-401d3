@@ -6,8 +6,23 @@
 - Lecture
   - OOP
   - Recursion
-  - Bitmaps
+  - Command Line Arguments
+  - Bitmaps - a 2D array
 - Whiteboard Interviews
+
+## Code review
+
+* Does it work!?
+* What part of this is confusing?
+* What could make it more readable?
+* What could have more explanation?
+* What could be broken into smaller pieces?
+* What would make this _easier for others_ to understand.
+* How could this be more performant?
+* Are there 'red flags' (Experience:  Things you don't do often.  Why did they do that?)
+* Are 'bad inputs' accounted for?
+* Are there missing test cases?
+* Is it well documented?
 
 ## OOP Warmup
 
