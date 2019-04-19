@@ -42,14 +42,17 @@ public class App {
     public static void quickBigO() {
         int[] myFancyArray = new int[10];
 
+        // O(1)
         int x = myFancyArray[2];
 
+        // O(n)
         for (int i : myFancyArray) {
             System.out.println(i);
         }
 
+        // time: O(n^2)
+        // size: O(n)
         HashSet<Integer> set = new HashSet<>();
-
         for (int i : myFancyArray) {
             for (int j : myFancyArray) {
                 set.add(i);
@@ -58,14 +61,27 @@ public class App {
         }
     }
 
-    public static void doDomething(final Rock r) {
-//        r = new Rock("Dome");
+    public static void doDomething(Rock r) {
+        // it passed in the ref address, not the actual ref
+        // so r is _not_ r1 that was passed in.
+        // it's a copy of the reference
 
-        final int x = 5;
+        // when we reassign, Rocker will be lost and eventually eaten by the garbage collector
+        r = new Rock("Rocker");
     }
 
     public static void addDiamonds(Rock r) {
+        // In this case, we access r and it's the same address as what was passed in
+        // so when we change the properties, they _do_ change.
         r.numOfDiamonds++;
+    }
+
+    public static void doDomethingFinal(final Rock r) {
+        // same as before, but by labeling rock as "final"
+        // the compiler will keep you from trying to reassign.
+
+        // r = new Rock("Rocker");  // compile error
+        r.numOfDiamonds = 10; // but this still works
     }
 
     public static void reviewStuff() {
