@@ -52,3 +52,29 @@ Lab: More Restaurants and reviews!
 ### Lists vs. ArrayLists vs. LinkedLists
 
 Which should you use? Why?
+
+# Overview of Interfaces Demo
+
+Critter - Abstract - gives us a name
+Dancer - Interface - getDance()
+NoiseMaker - Interface - makeNoise()
+
+Cat Extends Critter Implements NoiseMaker
+Robot Extends Critter Implements NoiseMaker, Dancer
+
+Cat = Critter = NoiseMaker
+Robot = Critter = NoiseMaker = Dancer
+
+NoiseMakerOutputService - Class
+    new(Logger log)
+    output(NoiseMaker)
+        log.log(noisemaker.makeNoise())
+
+Logger - Interface
+    log(String msg);
+
+ConsoleLogger implements Logger
+    log() // sout
+
+TestLogger implements Logger
+    log() // stores in an List
