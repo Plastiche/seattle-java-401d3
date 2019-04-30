@@ -13,7 +13,6 @@ Feedback review
 
 Project week overview
 - Teams
-  - [], []
 - Project Requirements
 - Project Topics/Skills
 
