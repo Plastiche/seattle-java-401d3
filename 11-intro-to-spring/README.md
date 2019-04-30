@@ -1,24 +1,21 @@
 # Class 11: Intro to Spring MVC
 
-## Resources
-
-* [The Spring Initializr \[sic\]](https://start.spring.io/)
-* [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
-* [Deploying Spring MVC to Heroku](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
-* [Spring Static Resources](https://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot)
-
 ## Announcements
 
-Don't forget that career coaching is coming on Friday!  Be here/there/somewhere at 9am.
+Career coaching is coming on Friday!  Be here/there/somewhere at 9am.
 
 Feedback review
 - Java docs:  Still unhelpful
-- Afternoon classes:  Still sleepy
+- Afternoon classes:  Still exhausting
 - Stack learning:  Still stacking
 - Retrospective:  Full of shenanigans, but generally positive?
 - Reviews: Super helpful
 
 Project week overview
+- Teams
+  - [], []
+- Project Requirements
+- Project Topics/Skills
 
 ## Code review
 
@@ -36,7 +33,7 @@ Spring
 - Returning text
 - Returning a Thymeleaf Template
 
-Simple testing
+Testing a controller
 
 Heroku Revisited
 
@@ -64,3 +61,10 @@ Basic Spring
 * Return simple string responses.
 * Serve static content.
 * Configure a route with URL parameters.
+  
+## Resources
+
+* [The Spring Initializr \[sic\]](https://start.spring.io/)
+* [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
+* [Deploying Spring MVC to Heroku](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
+* [Spring Static Resources](https://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot)
