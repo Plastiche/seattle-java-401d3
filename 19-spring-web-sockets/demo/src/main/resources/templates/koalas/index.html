@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Koalas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<table>
+    <tr th:each="koala : ${koalas}">
+        <td th:text="${koala.getName()}"></td>
+        <td>
+            <span th:each="like : ${koala.getLikes()}">
+                <span th:text="${like.getName()}"></span>,
+            </span>
+        </td>
+        <td>
+            <span th:each="liker : ${koala.getLikers()}">
+                <span th:text="${liker.getName()}"></span>,
+            </span>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>

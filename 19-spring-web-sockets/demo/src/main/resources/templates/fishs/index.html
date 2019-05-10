@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fisheees</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<table>
+    <tr th:each="fish : ${fishs}">
+        <td th:text="${fish.getName()}"></td>
+        <td>
+            <span th:each="like : ${fish.getLikes()}">
+                <!-- From the "like" we can get the "toFish" and directly get the name -->
+                <span th:text="${like.getToFish().getName()}"></span>,
+            </span>
+        </td>
+        <td>
+            <span th:each="liker : ${fish.getLikers()}">
+                 <!-- and the same from the other side -->
+                <span th:text="${liker.getFromFish().getName()}"></span>,
+            </span>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>

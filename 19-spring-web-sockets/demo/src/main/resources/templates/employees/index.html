@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employees</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<table>
+    <tr th:each="employee : ${employees}">
+        <td th:text="${employee.getName()}"></td>
+        <td>
+            <!-- for each of this manager's employees, loop and print the name -->
+            <span th:each="peon : ${employee.getEmployees()}">
+                <span th:text="${peon.getName()}"></span>,
+            </span>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
